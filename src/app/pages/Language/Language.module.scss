@@ -1,0 +1,17 @@
+.language {
+    gap: 5rem;
+    
+    .children {
+        li {
+            span {
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    .call-to-action {
+        margin-inline-start: auto;
+    }
+}

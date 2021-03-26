@@ -1,0 +1,40 @@
+@use "/src/app/styles";
+
+.app {
+    background: linear-gradient(to top left, styles.$color-accent-dark, styles.$color-accent-light);
+    
+    &,
+    main,
+    .container,
+    .step {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &,
+    main,
+    .container {
+        flex: 1;
+        
+    }
+    
+    main,
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    > * {
+        padding: 2rem 6rem;
+    }
+    
+    a {
+        button {
+            border: 0.2rem solid currentColor;
+            border-radius: 999rem;
+            
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+    }
+}
